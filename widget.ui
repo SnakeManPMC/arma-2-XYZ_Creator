@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XYZ Creator (c) PMC</string>
+  </property>
+  <widget class="QLabel" name="label_gridSize">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Grid size</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cellSize">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cell size</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="gridSize">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentText">
+    <string>1024 x 1024</string>
+   </property>
+   <property name="currentIndex">
+    <number>6</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>16 x 16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>32 x 32</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>64 x 64</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>128 x 128</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>256 x 256</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>512 x 512</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1024 x 1024</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2048 x 2048</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4096 x 4096</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>8192 x 8192</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDoubleSpinBox" name="cellSize">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>40</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>50.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_terrainSize">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Terrain size in meters</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="terrainSize">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>671</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createWrp">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Create WRP</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="importXyz">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Import XYZ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveXyz">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save to XYZ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveWrp">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>320</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save to WRP</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="statusLine">
+   <property name="geometry">
+    <rect>
+     <x>473</x>
+     <y>413</y>
+     <width>311</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_satelliteResolution">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Satellite Resolution</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="metersPerPixel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>161</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_metersPerPixel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Meters / Pixel and Blue Edge</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="satelliteResolution">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>12800.000000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
