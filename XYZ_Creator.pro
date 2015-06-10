@@ -10,11 +10,9 @@ TARGET = XYZ_Creator
 TEMPLATE = app
 
 SOURCES += main.cpp\
-	widget.cpp\
-	../include/ofpwrp.cpp
+	widget.cpp
 
-HEADERS  += widget.h\
-	../include/ofpwrp.h
+HEADERS  += widget.h
 
 FORMS    += widget.ui
 

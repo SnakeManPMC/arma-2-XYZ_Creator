@@ -1,6 +1,5 @@
 #include "widget.h"
 #include "ui_widget.h"
-#include "../include/ofpwrp.h"
 #include <QtWidgets>
 
 Widget::Widget(QWidget *parent) :
@@ -13,59 +12,6 @@ Widget::Widget(QWidget *parent) :
 Widget::~Widget()
 {
     delete ui;
-}
-
-
-void Widget::on_createWrp_clicked()
-{
-	wrp = new OFPWRP();
-	ui->statusLine->append("Created WRP \"space\"");
-}
-
-
-void Widget::on_importXyz_clicked()
-{
-	QString fileName;
-
-	fileName = QFileDialog::getOpenFileName(
-		this,
-		"Choose a XYZ file to open",
-		QString::null,
-		QString::null);
-
-	if (fileName.isEmpty())
-	return;
-	else
-	{
-		wrp->ReadXYZ(fileName);
-		ui->statusLine->append("Loaded XYZ file, dunno if it failed or not heh...");
-	}
-}
-
-
-void Widget::on_saveXyz_clicked()
-{
-	QString fileName;
-
-	fileName = QFileDialog::getSaveFileName(
-		this,
-		"Choose a XYZ file name to save",
-		QString::null,
-		QString::null);
-
-	if (fileName.isEmpty())
-	return;
-	else
-	{
-		wrp->WriteXYZ(fileName, gridsize);
-		ui->statusLine->append("Created XYZ file, dunno if it failed or not heh...");
-	}
-}
-
-
-void Widget::on_saveWrp_clicked()
-{
-	ui->statusLine->append("Not implemented yet...");
 }
 
 

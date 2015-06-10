@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>705</width>
+    <height>218</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -141,68 +141,6 @@
      <y>170</y>
      <width>671</width>
      <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="createWrp">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>240</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Create WRP</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="importXyz">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>280</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Import XYZ</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="saveXyz">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>320</y>
-     <width>101</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Save to XYZ</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="saveWrp">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>320</y>
-     <width>91</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Save to WRP</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="statusLine">
-   <property name="geometry">
-    <rect>
-     <x>473</x>
-     <y>413</y>
-     <width>311</width>
-     <height>171</height>
     </rect>
    </property>
   </widget>
