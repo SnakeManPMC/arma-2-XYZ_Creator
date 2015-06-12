@@ -7,6 +7,8 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+
+    setWindowTitle("XYZ Creator v1.0.1 by PMC");
 }
 
 Widget::~Widget()

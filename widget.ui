@@ -7,11 +7,8 @@
     <x>0</x>
     <y>0</y>
     <width>705</width>
-    <height>218</height>
+    <height>211</height>
    </rect>
-  </property>
-  <property name="windowTitle">
-   <string>XYZ Creator (c) PMC</string>
   </property>
   <widget class="QLabel" name="label_gridSize">
    <property name="geometry">
@@ -201,6 +198,13 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>gridSize</tabstop>
+  <tabstop>cellSize</tabstop>
+  <tabstop>satelliteResolution</tabstop>
+  <tabstop>metersPerPixel</tabstop>
+  <tabstop>terrainSize</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
