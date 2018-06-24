@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>705</width>
+    <width>707</width>
     <height>211</height>
    </rect>
   </property>
@@ -15,8 +15,8 @@
     <rect>
      <x>20</x>
      <y>20</y>
-     <width>46</width>
-     <height>13</height>
+     <width>111</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
@@ -26,10 +26,10 @@
   <widget class="QLabel" name="label_cellSize">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>20</y>
-     <width>46</width>
-     <height>13</height>
+     <width>121</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
@@ -41,15 +41,15 @@
     <rect>
      <x>20</x>
      <y>40</y>
-     <width>101</width>
+     <width>141</width>
      <height>22</height>
     </rect>
    </property>
    <property name="currentText">
-    <string>1024 x 1024</string>
+    <string>16 x 16</string>
    </property>
    <property name="currentIndex">
-    <number>6</number>
+    <number>0</number>
    </property>
    <item>
     <property name="text">
@@ -101,13 +101,23 @@
      <string>8192 x 8192</string>
     </property>
    </item>
+   <item>
+    <property name="text">
+     <string>16384 x 16384</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>32768 x 32768</string>
+    </property>
+   </item>
   </widget>
   <widget class="QDoubleSpinBox" name="cellSize">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>180</x>
      <y>40</y>
-     <width>62</width>
+     <width>71</width>
      <height>22</height>
     </rect>
    </property>
@@ -123,7 +133,7 @@
     <rect>
      <x>20</x>
      <y>150</y>
-     <width>101</width>
+     <width>211</width>
      <height>16</height>
     </rect>
    </property>
@@ -146,7 +156,7 @@
     <rect>
      <x>20</x>
      <y>80</y>
-     <width>101</width>
+     <width>141</width>
      <height>16</height>
     </rect>
    </property>
@@ -169,7 +179,7 @@
     <rect>
      <x>150</x>
      <y>80</y>
-     <width>141</width>
+     <width>231</width>
      <height>16</height>
     </rect>
    </property>

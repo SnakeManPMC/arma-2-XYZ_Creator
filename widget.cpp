@@ -8,7 +8,7 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    setWindowTitle("XYZ Creator v1.0.1 by PMC");
+    setWindowTitle("XYZ Creator v1.0.2 by PMC");
 }
 
 Widget::~Widget()
@@ -80,9 +80,14 @@ void Widget::updateTerrainSize()
 	if (ui->gridSize->currentIndex() == 8)
 		gridsize = 4096;
 
-	// new for arma3 terrain builder
 	if (ui->gridSize->currentIndex() == 9)
 		gridsize = 8192;
+
+	if (ui->gridSize->currentIndex() == 10)
+		gridsize = 16384;
+
+	if (ui->gridSize->currentIndex() == 11)
+		gridsize = 32768;
 
 	// terrain size in meters
 	meters = (gridsize * cellsize);
