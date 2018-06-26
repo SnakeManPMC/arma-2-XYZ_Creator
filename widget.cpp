@@ -48,9 +48,9 @@ void Widget::updateTerrainSize()
 	*/
 	cellsize = ui->cellSize->value();
 	satelliteresolution = ui->satelliteResolution->value();
-	double meters;
-	double km2;
-	double pixelfinal;
+	unsigned long meters;
+	unsigned long km2;
+	unsigned long pixelfinal;
 
 	// calculate terrain size
 	if (ui->gridSize->currentIndex() == 0)

@@ -46,10 +46,10 @@
     </rect>
    </property>
    <property name="currentText">
-    <string>16 x 16</string>
+    <string>256 x 256</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>4</number>
    </property>
    <item>
     <property name="text">
